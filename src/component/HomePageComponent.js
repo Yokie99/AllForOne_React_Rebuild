@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default function HomePage() {
     return (
-        <body className="bg-main bg-no-repeat bg-cover bg-center bg-fixed font-Jim">
+        <div className="bg-main bg-no-repeat bg-cover bg-center bg-fixed font-Jim">
 
             <h1 className="text-[12vw] text-yellow-200 font-bold text-center">MiniQuest</h1>
             <div className="border-4 border-yellow-200 sm:mx-36 pb-12">
@@ -104,6 +104,6 @@ export default function HomePage() {
 
 
 
-        </body>
+        </div>
     )
 }

@@ -12,6 +12,9 @@ export default function SayHello() {
             const response = await fetchHello(inputField);
             setResult(response);
         }
+        else{
+            setResult("Please enter your name !")
+        }
 
     }
 
@@ -21,7 +24,7 @@ export default function SayHello() {
     return (
         <div className="bg-main bg-no-repeat bg-cover bg-center bg-fixed font-Jim h-[100vh]">
 
-            <h1 className="text-[12vw] text-yellow-200 font-bold text-center pt-9">Say Hello</h1>
+            <h1 className="text-[10vw] text-yellow-200 font-bold text-center pt-9">Say Hello</h1>
 
             <div className="flex">
                 <p className="text-6xl text-white font-bold py-20 mx-24 ">Whats your name? : </p>
@@ -30,7 +33,7 @@ export default function SayHello() {
             </div>
 
 
-            <p id="sayHelloOutput" className="text-8xl text-white font-bold text-center mt-6"> {result} </p>
+            <p id="sayHelloOutput" className="text-7xl text-white font-bold text-center mt-6"> {result} </p>
 
 
 
