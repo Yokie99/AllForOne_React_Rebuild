@@ -1,6 +1,8 @@
 import React from 'react'
 
 import { Link } from 'react-router-dom';
+import Plus from '../assets/Plus.png'
+
 import { useState } from 'react';
 
 export default function AddEm() {
@@ -16,7 +18,7 @@ export default function AddEm() {
 
             <div className="flex justify-between align-middle pb-28">
                 <input className="w-3/6 text-6xl mx-8" id="addEmOne" type="text"></input>
-                <img src="/assets/Plus.png" alt=""></img>
+                <img src={Plus} alt="Plus symbol"></img>
                 <input className=" w-3/6 text-6xl mx-8" id="addEmTwo" type="text"></input>
             </div>
 
